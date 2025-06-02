@@ -9,6 +9,7 @@ project:
   top_module:   "tt_um_Rescobar226_fsm"
   source_files:
     - "tt_um_Rescobar226_fsm.v"
+  expect_failure: true
 
 pinout:
   ui[0]: "Sen"
@@ -39,5 +40,3 @@ pinout:
   uio[7]: ""
 
 yaml_version: 6
-
-expect_failure: true
