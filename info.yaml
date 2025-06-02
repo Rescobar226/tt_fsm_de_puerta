@@ -39,3 +39,5 @@ pinout:
   uio[7]: ""
 
 yaml_version: 6
+
+expect_failure: true
