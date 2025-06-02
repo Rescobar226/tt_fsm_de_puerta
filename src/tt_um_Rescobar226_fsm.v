@@ -33,17 +33,14 @@ module tt_um_Rescobar226_fsm (
             S <= S_n;
     end
 
-    wire MA = (S == 4'b0010);
-    wire MC = (S == 4'b0100);
-
-    assign uo_out[0] = MA;
-    assign uo_out[1] = MC;
-    assign uo_out[2] = S[0];
-    assign uo_out[3] = S[1];
-    assign uo_out[4] = S[2];
-    assign uo_out[5] = S[3];
-    assign uo_out[6] = 1'b0;
-    assign uo_out[7] = 1'b0;
+ assign uo_out[0] = MA;
+assign uo_out[1] = MC;
+assign uo_out[2] = S[0];  // s0
+assign uo_out[3] = S[1];  // s1
+assign uo_out[4] = S[2];  // s2
+assign uo_out[5] = S[3];  // s3
+assign uo_out[6] = 1'b0;
+assign uo_out[7] = 1'b0;
 
     // Pines bidireccionales no usados
     assign uio_out = 8'b0;
